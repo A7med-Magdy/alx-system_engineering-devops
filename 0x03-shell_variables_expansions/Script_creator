@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Enter the file name:"
+read script_name
+
+echo "#!/bin/bash" > $script_name
+
+echo "Enter the desired command:"
+read desired_command
+
+echo $desired_command >> $script_name
+
+chmod u+x $script_name
